@@ -1,0 +1,6 @@
+/* the master css file is a central resource file which is linked to all pages
+   & contains links to all other css files in the site */
+   @import url('main.css');
+   @import url('body.css');
+   @import url('footer.css');
+   

@@ -1,0 +1,23 @@
+/* body.css is a CSS document which contains the styles for the body styles such as fonts etc */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    margin:0px auto;
+    font-family: 'Roboto', sans-serif;
+}
+
+.crush-logo{
+	width: 100%;
+	max-width:150px;
+	height: auto;
+}
+
+/* responsive bike image */
+.crush29{
+	width: 100%;
+	max-width:1200px;
+	height: auto;
+	
+}
+
+ul li{list-style:none;}

@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* main.css is a CSS Document which contains the majority of the syles for the layout */
+
+/* declare grid */
+main{
+	display: grid;
+	
+	min-height: 100%;
+	grid-gap: 0px;
+	padding: 30px;
+	
+	grid-template-areas: 
+	"top top"
+	"bike bike"	
+	"left right";
+	
+	margin:0px auto;
+	max-width:1200px;	
+}
+
+.top{grid-area: top;}
+.bike{grid-area: bike;}
+.left{grid-area: left;
+      border:1px solid #B4B0B0; 
+	 border-right:none;
+	  padding:20px;
+}
+.right{grid-area: right;
+	   border:1px solid #B4B0B0; 
+	 border-left:none;
+	   padding:20px;}
+
+ @media only screen and (max-width: 1000px)  {
+    main {
+        grid-template-areas:
+		'top'
+		'bike'
+        'left'
+	    'right';
+    }
+	 
+	 .left{grid-area: left;
+      border:1px solid #B4B0B0; 
+	 border-bottom:none;
+	 }
+
+     .right{grid-area: right;
+	   border:1px solid #B4B0B0; 
+	 border-top:none;
+	 }	 
+}
